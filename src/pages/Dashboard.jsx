@@ -6,6 +6,7 @@ import ChartsGrid from '../components/Charts';
 import PatientTable from '../components/PatientTable';
 import AIInsights from '../components/AIInsights';
 import AddPatientModal from '../components/AddPatientModal';
+import AnalyticsDashboard from './AnalyticsDashboard';
 import { initialPatients } from '../data/patients';
 import { 
   Users, 
@@ -511,6 +512,10 @@ const Dashboard = ({ darkMode }) => {
                 })}
               </div>
             </>
+          )}
+
+          {activeTab === 'quicksight' && (
+            <AnalyticsDashboard />
           )}
 
           {activeTab === 'settings' && (

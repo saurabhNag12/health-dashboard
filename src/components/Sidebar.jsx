@@ -8,7 +8,8 @@ import {
   ChevronLeft, 
   ChevronRight,
   Heart,
-  Stethoscope
+  Stethoscope,
+  BarChart3
 } from 'lucide-react';
 
 /**
@@ -25,6 +26,7 @@ const Sidebar = ({ activeTab, setActiveTab, darkMode }) => {
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'patients', label: 'Patients', icon: Users },
     { id: 'analytics', label: 'Analytics', icon: Activity },
+    { id: 'quicksight', label: 'QuickSight', icon: BarChart3 },
     { id: 'reports', label: 'Reports', icon: FileText },
     { id: 'settings', label: 'Settings', icon: Settings },
   ];
